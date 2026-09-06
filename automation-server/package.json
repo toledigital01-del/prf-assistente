@@ -1,0 +1,16 @@
+{
+  "name": "prf-automation-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Servidor local que abre um navegador de verdade para você logar no PDI/Frequência PRF e permite que o app peça ações (com confirmação) sobre a página aberta. NUNCA guarda nem preenche login.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "playwright": "^1.48.2"
+  }
+}
